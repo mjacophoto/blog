@@ -1,0 +1,6 @@
+baseURL = 'https://mjacophoto.github.io/blog/'
+languageCode = 'en-us'
+title = 'mjacophoto.blog'
+theme = 'hugo-theme-re-terminal-2.4.1'
+relativeURLs = true
+canonifyURLs = false
