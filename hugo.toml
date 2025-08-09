@@ -2,5 +2,122 @@ baseURL = 'https://mjacophoto.github.io/blog/'
 languageCode = 'en-us'
 title = 'mjacophoto.blog'
 theme = 'hugo-theme-re-terminal-2.4.1'
+pagination.pagerSize = 5
+[params]
+  # default is 'content/posts'
+  # list of set content that will show on the index page (baseURL)
+  contentTypeName = "posts"
+  
+  # ["orange", "blue", "red", "green", "pink", "paper"]
+  themeColor = "green"
+  
+  # if 0, only submenu trigger will be visible
+  showMenuItems = 6
+  
+  # show selector to switch language
+  showLanguageSelector = false
+
+  # set theme to full screen width
+  fullWidthTheme = false
+
+  # center theme with default width
+  centerTheme = true
+
+  # if your resource directory contains an image called `cover.(jpg|png|webp)`,
+  # then the file will be used as a cover automatically.
+  # With this option you don't have to put the `cover` param in a front-matter.
+  autoCover = true
+
+  # set post to show the last updated
+  # If you use git, you can set `enableGitInfo` to `true` and then post will automatically get the last updated
+  showLastUpdated = false
+
+  # set a custom favicon (default is a `themeColor` square)
+  # favicon = "favicon.ico"
+
+  # Provide a string as a prefix for the last update date. By default, it looks like this: 2020-xx-xx [Updated: 2020-xx-xx] :: Author
+  # updatedDatePrefix = "Updated"
+
+  # set all headings to their default size (depending on browser settings)
+  # oneHeadingSize = true # default
+
+  # whether to show a page's estimated reading time
+  # readingTime = false # default
+
+  # whether to show a table of contents
+  # can be overridden in a page's front-matter
+  Toc = true # default
+
+  # set title for the table of contents
+  # can be overridden in a page's front-matter
+  TocTitle = "Table of Contents" # default
+
+  # you can set a banner on the top of the page with a call to action
+  # defaults: dismissible = false; URL is optional
+  # [params.banner]
+  # dismissible = false
+  # text = "Check it out on GitHub"
+  # url = "https://github.com/mirus-ua/hugo-theme-re-terminal"
+  
+  [languages]
+  [languages.en.params]
+    languageName = "English"
+    title = "mjaco.photo"
+    subtitle = "photography by mars jacobsen"
+    owner = "mjaco"
+    keywords = ""
+    copyright = "Marshall 'Mars' Jacobsen"
+    menuMore = "show more"
+    readMore = "read more"
+    readOtherPosts = "read other posts"
+    newerPosts = "newer posts"
+    olderPosts = "older posts"
+    missingContentMessage = "page not found..."
+    missingBackButtonLabel = "back to home page"
+    minuteReadingTime = "min read"
+    words = "words"
+
+    [languages.en.params.logo]
+      logoText = "mjaco.photo"
+      logoHomeLink = "/"
+
+    [languages.en.menu]
+      # Submenus is available since v2.1.0
+      # [[languages.en.menu.main]]
+      #   identifier = "submenuParent"
+      #   name = "Submenu"
+      # [[languages.en.menu.main]]
+      #   parent = "submenuParent"
+      #   identifier = "anItem"
+      #   name = "AnItem"
+      
+      [[languages.en.menu.main]]
+        identifier = "animals"
+        name = "animals"
+        url = "/animals"
+      [[languages.en.menu.main]]
+        identifier = "wildlife"
+        name = "wildlife"
+        url = "/wildlife"
+        parent = "animals"
+      [[languages.en.menu.main]]
+        identifier = "domestic"
+        name = "domestic"
+        url = "/domestic"
+        parent = "animals"
+      [[languages.en.menu.main]]
+        identifier = "people"
+        name = "people"
+        url = "/people"
+      [[languages.en.menu.main]]
+        identifier = "cosplay"
+        name = "cosplay"
+        url = "/cosplay"
+        parent = "people"
+      [[languages.en.menu.main]]
+        identifier = "about"
+        name = "about"
+        url = "/about"
+
 relativeURLs = true
 canonifyURLs = false
