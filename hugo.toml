@@ -9,7 +9,7 @@ pagination.pagerSize = 5
   contentTypeName = "posts"
   
   # ["orange", "blue", "red", "green", "pink", "paper"]
-  themeColor = "green"
+  themeColor = "orange"
   
   # if 0, only submenu trigger will be visible
   showMenuItems = 6
